@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Server-Sent Events Example</title>
+        <!-- <script src="https://kripken.github.io/ammo.js/builds/ammo.wasm.js"></script> -->
+        <link rel="stylesheet" href="/style.css" />
+    </head>
+    <body>
+        <div id="login" style="display: none">
+            <span id="error" style="display: none;">The given username has already been used</span>
+            <input id="username" placeholder="Username" class="dark"/>
+            <input id="password" placeholder="Admin Password" class="dark"/>
+        </div>
+        <div id="game" style="display: none">
+            <canvas id="gameCanvas"></canvas>
+        </div>
+    </body>
+    <script src="/main.js"></script>
+</html>

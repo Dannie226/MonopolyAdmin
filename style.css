@@ -1,0 +1,198 @@
+:root {
+    --grey: #222;
+    --blue: #3183DB;
+}
+
+body {
+    background: var(--grey);
+    margin: 0px;
+}
+
+#login {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#username {
+    position: absolute;
+    transform: translate(-50%, -120%);
+
+    top: 50%;
+    left: 50%;
+
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+#password {
+    position: absolute;
+    transform: translate(-50%, 20%);
+
+    top: 50%;
+    left: 50%;
+
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+#error {
+    color: red;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    text-align: center;
+
+    bottom: 55%;
+    left: 50%;
+}
+
+#game {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.light {
+    border: 1px solid black;
+    stroke: black;
+    color: black;
+    fill: black;
+    background-color: white;
+}
+
+.dark {
+    border: 1px solid white;
+    stroke: white;
+    color: white;
+    fill: white;
+    background-color: #111;
+}
+
+.uiButton {
+    border: none;
+    border-radius: 50%;
+    background: none;
+    position: absolute;
+    right: 20px;
+    z-index: 0;
+}
+
+.uiButtonImage {
+    width: 2vw;
+    height: 2vw;
+
+    /* fill: none; */
+    stroke-width: 2px;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.windowElement {
+    width: 20%;
+    height: 75%;
+
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    margin: 0px;
+
+    z-index: 10;
+}
+
+.windowHeader {
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.backButton {
+    background: none;
+
+    transform: translate(0%, -50%);
+
+    position: absolute;
+    top: 50%;
+}
+
+.headerSpan {
+    transform: translate(-50%, -50%);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.panel {
+    width: 100%;
+}
+
+.chatter#chatButton {
+    bottom: 20px;
+}
+
+.window {
+    width: 100%;
+    height: 95%;
+
+    position: absolute;
+    top: 5%;
+    left: 0px;
+}
+
+.chatter#messagesInput {
+    width: 94%;
+    position: absolute;
+
+    transform: translate(-50%, 0%);
+
+    left: 50%;
+    bottom: 1.5%;
+}
+
+.chatter#messagesElement {
+    width: 100%;
+    height: 90%;
+
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+}
+
+.chatter#chatNameSpan {
+    transform: translate(0%, -50%);
+
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+
+.settings#settingsButton {
+    bottom: calc(40px + 2vw);
+}
+
+.move#moveButton {
+    bottom: calc(60px + 4vw);
+}
+
+.move.panel {
+    text-align: center;
+}
+
+#gameCanvas {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left:0px;
+    top:0px;
+
+    display: block;
+}
